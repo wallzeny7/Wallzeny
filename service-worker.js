@@ -1,5 +1,5 @@
-const CACHE_NAME = 'wallzeny-shell-v2';
-const APP_FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
+const CACHE_NAME = 'wallzeny-shell-v3';
+const APP_FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './cars.jpg', './nature.jpg', './people.jpg', './girls.jpg', './animal.jpg', './abstract.jpg', './entertainment.jpg', './space.jpg', './gothic-girls.jpg', './featured-zen-stones.jpg', './featured-zen-sand.jpg', './featured-zen-sand-lines.jpg', './featured-zen-sand-soft.jpg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_FILES)));
   self.skipWaiting();
